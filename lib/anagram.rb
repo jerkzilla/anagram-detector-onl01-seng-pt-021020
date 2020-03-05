@@ -5,9 +5,8 @@ def initialize(word)
 end
 
 def match(array_of_words)
-  array_of_words.select do |element| (@word.split("")) == (element.split(""))
+  array_of_words.select do |element| (@word.split("").sort) == (element.split("").sort)
 end
-
 end
 
 
